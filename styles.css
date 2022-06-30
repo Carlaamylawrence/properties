@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
+#landing {
+  background-image: url(./assets/pexels-the-lazy-artist-gallery-1642125.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.header-container {
+  color: whitesmoke;
+  text-shadow: 2px 1px 1px black;
+}
+
+.card {
+  margin-top: -3rem;
+  width: 70%;
+}
+
+#footer-top {
+  background-color: #004274;
+  color: white;
+}
+
+#listings {
+  min-height: 90vh;
+}
+.property-info {
+  display: flex;
+  margin-top: -1rem;
+}
+
+.property-card {
+  position: relative;
+}
+
+.price-details {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.property-card:hover .price-details {
+  opacity: 1;
+}
+
+li {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.email-input {
+  width: 80%;
+}
+#footer-bottom {
+  background-color: #00335a;
+  color: white;
+  margin-bottom: 0;
+}
+
+.property-img {
+  object-fit: cover;
+}
